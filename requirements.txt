@@ -35,7 +35,6 @@ Jinja2==3.1.2
 joblib==1.1.0
 keyutils==0.6
 lazy-object-proxy==1.7.1
-louis==3.22.0
 manjaro-sdk==0.1
 mariadb==1.0.11
 Markdown==3.4.1
