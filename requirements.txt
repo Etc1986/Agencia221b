@@ -90,7 +90,6 @@ six==1.16.0
 sklearn==0.0
 starkbank-ecdsa==2.0.3
 systemd-python==234
-team==1.0
 tenacity==8.0.1
 threadpoolctl==3.1.0
 toml==0.10.2
