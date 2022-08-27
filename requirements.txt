@@ -47,7 +47,6 @@ nspektr==0.4.0
 numpy==1.23.1
 ordered-set==4.0.2
 packaging==21.3
-pacman-mirrors==4.23.2
 pandas==1.4.3
 pep517==0.12.0
 pexpect==4.8.0
