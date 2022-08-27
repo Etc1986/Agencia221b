@@ -97,7 +97,6 @@ tomli==2.0.1
 trove-classifiers==2022.8.7
 typing_extensions==4.3.0
 udiskie==2.4.2
-ufw==0.36.1
 urllib3==1.26.11
 validate-pyproject==0.9
 virtualenv==20.11.0
