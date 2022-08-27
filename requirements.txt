@@ -61,6 +61,7 @@ pycairo==1.21.0
 pycparser==2.21
 pyflakes==2.5.0
 Pygments==2.12.0
+PyGObject==3.42.2
 pyinotify==0.9.6
 pyinstaller==5.1
 pyinstaller-hooks-contrib==2022.7
