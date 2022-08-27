@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<title>{% block title %}{% endblock %} Agencia 221b</title>
+<link rel="icon" href="{{url_for('static', filename='img/agencialogo.jpg')}}" >
+<link rel="stylesheet" href="{{url_for('static', filename ='normalize.css')}}"> 
+<link rel="stylesheet" href="{{url_for('static', filename ='styles.css')}}"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;600;700&display=swap" rel="stylesheet"> 
+<body>
+	<header class="header">
+	<div class="navbar">
+				<a name="logo" class="img-menu"  href="#video">
+				</a>
+				<a class="e-menu"  href="#nosotros">Sobre Nosotros</a>
+				<a class="e-menu"  href="#servicios">Nuestros Servicios</a>
+				<a class="e-menu"  href="#contacto">Contacto</a>
+	</div>
+</header>
+{% block content %}
+{% endblock %}
+</body>
+<script src="../../static/js/main.js"></script>
+<footer>Derechos reservados etcdev Agencia221b 2022</footer>
+</html>
+

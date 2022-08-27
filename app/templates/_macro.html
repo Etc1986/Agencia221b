@@ -1,0 +1,36 @@
+{% macro show_form() %}
+<form method="POST" class="formulario" action="#contacto" >
+	<fieldset >
+    	<legend>Envíanos un mensaje</legend>
+ 	{% for message in get_flashed_messages(category_filter=["error"])%}
+		<div class="flash">
+			{{message}}
+		</div>
+  {%endfor%}
+ 	{% for message in get_flashed_messages(category_filter=["success"])%}
+		<div class="success">
+			{{message}}
+		</div>
+  {%endfor%}
+	<div class="contenedor_campos">
+    	<div class= "campo nombre">  
+      	<label for ="name">Nombre</label> <input name="name" class="input nombre" id="name" type="text" placeholder="Nombre"/>
+    	</div>
+      <div class="campo telefono"> 
+      <label for="phone">Teléfono</label><input name="phone" class="input telefono"id='phone' type="tel"  pattern="[0-9]{10}"
+			placeholder="1234567890"/>
+    	</div>
+    	<div class="campo correo-e">
+    		<label for="email">Correo electrónico</label><input name="email" class="input correo" id="email" type="email" 
+				placeholder="tucorreo@dominio.com"/>
+    	</div>
+<div class="campo textarea">
+    		<label for="message">Mensaje</label><textarea name="message" class="input mensaje" id="message" placeholder="¿En qué te podemos apoyar?"></textarea>
+    	</div>
+ 	</div>
+	    	<div class="btn-enviar">
+    		<input class="enviar" type="submit" value="Enviar"/>
+    	</div>
+    	</fieldset>
+  </form>
+	{% endmacro %}

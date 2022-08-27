@@ -1,0 +1,128 @@
+{% extends 'base/base.html' %}
+{% block content %}
+				<div  class="video-content">
+					<div class="overlay">
+						<video id="video" autoplay muted loop>
+							<source src="/static/video/video221b.mp4" type="video/mp4">
+							<source src="/static/video/video221b.ogg" type="video/ogg">
+							<source src="/static/video/video221b.webp" type="video/webp">
+						</video>
+					</div>
+				</div>
+		<div class="container-p">
+				<section class="nosotros" id="nosotros">
+					<h1 class="title-sn" >Sobre Nosotros</h1>
+					<p id="presentation">Somos una empresa de seguridad privada especializada, que surge de la observación 
+						de una serie de necesidades y carencias en la prestación de servicios de esta índole. 
+						Nuestro equipo directivo, en suma, acumula más de 30 años de experiencia en la planeacion, direccion, 
+						análisis y operación en materia de seguridad y prevención.					
+						<br>
+						<br>
+						Sabemos que nuestra forma de trabajar no es la más ortodoxa o convencional, pero estamos seguros de 
+						que es la más eficaz y efectiva.
+						
+						Los valores que guían nuestro accionar profesional son:
+						<span class="valores">
+							Honestidad, Responsabilidad,	Compromiso,
+							Profesionalismo, Servicio, Integridad, Respeto y Lealtad
+						</span>					
+					</p>
+					<div class="sobre-nosotros">
+						<div class="mision box">
+							<img class="icon img-mision" src="static/img/mision.png" alt="mision icon">
+							<div>
+							<h2>Mision</h2>
+							<p>Ofrecer servicios de prevencion y seguridad con el más alto profesionalismo, utililzando 
+								la inteligencia como nuestra principal herramienta</p>
+							</div>
+							</div>
+						<div class="vision box">
+							<img class="icon img-vision" src="static/img/vision.png" alt="mision icon">
+							<div><h2>Vision</h2>
+							<p>Ser la empresa de seguridad más confiable y eficiente de la región cambiando el paradigma de la 
+							forma en que deben operar los servicios de seguridad</p>
+						</div>
+						</div>
+						<div class="objetivos box">
+							<img class="icon img-objetivos" src="static/img/objetivo.png" alt="mision icon">
+							<div>
+							<h2 id="t-obj">Objetivos</h2>
+								<ul>
+									<li>Garantizar la seguridad de nuestros clientes y el resguardo de la infraestructura 
+										donde se presta el servicio</li>
+									<li>Utilizar el razonamiento antes que nada en nuestra labor diaria</li>
+									<li>Prevenir de manera eficaz y reaccionar de forma efectiva ante cualquier situacion</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section id="servicios">
+					<h1 class="title-services">
+						Nuestros Servicios
+					</h1>
+					<img id="service-p" 
+						src="static/img/escudo.png" alt="vigilancia"/>
+					<div class="servicios-container">
+							<div class="serv asesoria">
+								<p class="service">Asesoría</p>  
+								<img class="icon img-servicios" 
+									src="static/img/idea.png" alt="idea"/>
+							</div>
+						
+							<div class="serv capacitacion">
+								<p class="service">Capacitacion</p>  
+								<img class="icon img-servicios" 
+									src="static/img/luchador.png" alt="capacitacion"/>
+							</div>
+							
+							<div class="serv investigacion">
+								<p class="service">Investigación</p>  
+								<img class="icon img-servicios" 
+									src="static/img/detective.png" alt="investigación"/>
+							</div>
+							
+							<div class="serv supervision">
+								<p class="service">Supervision</p>  
+								<img class="icon img-servicios" 
+									src="static/img/radio-de-la-policia.png" alt="radio"/>
+						 	</div>
+							
+							<div class="serv empresarial">
+								<p class="service">Seguridad empresarial</p> 
+								<img class="icon img-servicios" 
+									src="static/img/guard.png" alt="empresarial"/>
+					    </div>
+							
+							<div class="serv inmuebles">
+								<p class="service">Resguardo de inmuebles</p> 
+								<img class="icon img-servicios" 
+									src="static/img/seguridad.png" alt="edificios"/>
+							</div>
+							
+							<div class="serv masivos">
+								<p class="service">Eventos Masivos</p>  
+								<img class="icon img-servicios" 
+									src="static/img/grupo.png" alt="grupo"/>
+							</div>
+							
+							<div class="serv consumo">
+								<p class="service">Centros de Consumo</p> 
+								<img class="icon img-servicios" 
+									src="static/img/entrance.png" alt="entrada"/>
+					    </div>
+							<div class="serv resguardo">
+								<p class="service">Resguardo personal</p> 
+								<img class="icon img-servicios" 
+									src="static/img/bouncer.png" alt="personal"/>
+					    </div>
+					</div>
+				</section>
+			<section id="contacto">
+      <h1 class="nameform">Contacto</h1>
+			{% from "_macro.html" import show_form %}
+			{{show_form()}}
+		</section>
+		</div>
+	{% endblock %}
