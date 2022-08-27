@@ -21,7 +21,6 @@ docutils==0.19
 filelock==3.6.0
 Flask==2.1.2
 future==0.18.2
-gufw==22.4.0
 gunicorn==20.1.0
 html5lib==1.1
 idna==3.3
