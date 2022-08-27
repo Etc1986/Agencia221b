@@ -41,7 +41,6 @@ mccabe==0.7.0
 more-itertools==8.13.0
 msgpack==1.0.3
 mysql-connector-python==8.0.29
-netsnmp-python==1.0a1
 notify2==0.3.1
 npyscreen==4.10.5
 nspektr==0.4.0
