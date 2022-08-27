@@ -1,9 +1,5 @@
-from os import error, name
-from flask import request, flash, Blueprint, render_template, current_app, url_for
-from werkzeug.utils import redirect
-from werkzeug.wrappers import response
+from flask import request, flash, Blueprint, render_template, current_app
 from .db  import get_db
-from app import schema
 import sendgrid
 from sendgrid.helpers.mail import Mail, To, Email, Content
 
