@@ -2,7 +2,6 @@ altgraph==0.17.2
 appdirs==1.4.4
 astroid==2.11.5
 autokey==0.96.0
-btrfsutil==5.18.1
 build==0.8.0
 CacheControl==0.12.6
 catfish==4.16.4
