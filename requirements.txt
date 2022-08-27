@@ -4,7 +4,6 @@ astroid==2.11.5
 autokey==0.96.0
 build==0.8.0
 CacheControl==0.12.6
-ceph==1.0.0
 ceph-volume==1.0.0
 cephfs==2.0.0
 cephfs-shell==0.0.1
