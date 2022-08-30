@@ -1,5 +1,4 @@
 from flask import request, flash, Blueprint, render_template, current_app
-from .db  import get_db
 import sendgrid
 from sendgrid.helpers.mail import Mail, To, Email, Content
 
@@ -27,9 +26,6 @@ def index():
 
         if len(errors) == 0:
             send(name, datos)
-            db, c = get_db()
-            c.execute('insert into email (name, phone, email, message) values (?, ?, ?, ?)',(name, phone, email, message))
-            db.commit()
             flash('El Mensaje se ha enviado correctamente','success')
         else:
             for error in errors:
