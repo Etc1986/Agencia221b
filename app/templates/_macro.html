@@ -1,14 +1,14 @@
 {% macro show_form() %}
-<form method="POST" class="formulario" action="#contacto" >
+<form method="POST" class="formulario" action="#contacto" > 
 	<fieldset >
     	<legend>Envíanos un mensaje</legend>
  	{% for message in get_flashed_messages(category_filter=["error"])%}
-		<div class="flash">
+		<div class="flash error">
 			{{message}}
 		</div>
   {%endfor%}
  	{% for message in get_flashed_messages(category_filter=["success"])%}
-		<div class="success">
+		<div class="flash success">
 			{{message}}
 		</div>
   {%endfor%}
