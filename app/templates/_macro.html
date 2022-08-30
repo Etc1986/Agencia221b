@@ -3,12 +3,12 @@
 	<fieldset >
     	<legend>Envíanos un mensaje</legend>
  	{% for message in get_flashed_messages(category_filter=["error"])%}
-		<div class="flash error">
+		<div class="error">
 			{{message}}
 		</div>
   {%endfor%}
  	{% for message in get_flashed_messages(category_filter=["success"])%}
-		<div class="flash success">
+		<div class="success">
 			{{message}}
 		</div>
   {%endfor%}
